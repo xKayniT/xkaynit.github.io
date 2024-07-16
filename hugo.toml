@@ -1,0 +1,75 @@
+baseurl = "http://www.xKayniT.com"
+title = "xKayniT"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+[services]
+[services.disqus]
+disqusShortname = "xkaynit"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "xKayniT"
+  info = "A high school cybersecurity student"
+  description = "xKayniT Blog's"
+  keywords = "blog,developer,cybersecurity"
+  avatarurl = "images/linuxprofil.jpg"
+  #gravatar = "john.doe@example.com"
+
+  faviconSVG = "/images/linuxprofil.jpg"
+  favicon_32 = "/images/linuxprofil.jpg"
+  favicon_16 = "/images/linuxprofil.jpg"
+
+  since = 2024
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/xKayniT"
+[[params.social]]
+  name = "CTFlearn"
+  weight = 2
+  url = "https://ctflearn.com/user/xkaynit"
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 3
+  url = "https://www.linkedin.com/in/corentin-leblanc-053490207/"
+#[[params.social]]
+#  name = "Twitter"
+#  icon = "fa-brands fa-x-twitter fa-2x"
+#  weight = 4
+#  url = "https://twitter.com/johndoe/"
+
+# Menu links
+[[menu.main]]
+  name = "Posts"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
+

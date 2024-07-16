@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post on xKayniT</title>
+    <link>http://localhost:1313/tags/post/</link>
+    <description>Recent content in Post on xKayniT</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reverse your first program using ghidra</title>
+      <link>http://localhost:1313/posts/reverse_your_first_program/</link>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/reverse_your_first_program/</guid>
+      <description>Reverse your first program using ghidra Link to heading Introduction Link to heading This article is here to help anyone want to start in reverse some programs but don&amp;rsquo;t know where to start. Reverse engineering consist in deconstruct/decompilate(in our case) code or executable file in order to understand how it works and to identify potentials vulnerabilities which can be exploit by an attacker after analysis. As an example, I took a file from https://crackmes.</description>
+    </item>
+    <item>
+      <title>Useful tools for cybersecurity</title>
+      <link>http://localhost:1313/posts/useful_tool/</link>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/useful_tool/</guid>
+      <description>Useful tools to increase your cybersecurity skills Link to heading Introduction Link to heading There is no secret in cybersecurity, if you want to learn you have to practice again and again. Here is a list of some tools which can helps you to start learning or increase your knowledges in cybersecurity. It&amp;rsquo;s a good way for me to remember every tool too. If you have any questions or remarks please feel free to ask :).</description>
+    </item>
+  </channel>
+</rss>

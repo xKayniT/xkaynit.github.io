@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  SHC2024 - Serverless login · xKayniT
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="xKayniT">
+<meta name="description" content="SHC 2024 write up for Serverless login challenge">
+<meta name="keywords" content="blog,developer,cybersecurity">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SHC2024 - Serverless login">
+  <meta name="twitter:description" content="SHC 2024 write up for Serverless login challenge">
+
+<meta property="og:url" content="http://localhost:1313/posts/shc_2024_serverless-login/">
+  <meta property="og:site_name" content="xKayniT">
+  <meta property="og:title" content="SHC2024 - Serverless login">
+  <meta property="og:description" content="SHC 2024 write up for Serverless login challenge">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-05-13T00:00:00+00:00">
+    <meta property="article:tag" content="Xkaynit">
+    <meta property="article:tag" content="Web">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/shc_2024_serverless-login/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/linuxprofil.jpg" sizes="any">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      xKayniT
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/shc_2024_serverless-login/">
+              SHC2024 - Serverless login
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-05-13T00:00:00Z">
+                May 13, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/xkaynit/">Xkaynit</a></div>
+
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/xkaynit/">Xkaynit</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/web/">Web</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="shc-2024">
+  SHC 2024
+  <a class="heading-link" href="#shc-2024">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="serverless-login">
+  serverless-login
+  <a class="heading-link" href="#serverless-login">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li><strong>Introduction</strong></li>
+</ol>
+<p>This writeup is about the serverless-login challenge of the Swiss Hacking Challenge 2024. Here is the description of the challenge :</p>
+<p><em>Imagine you&rsquo;re throwing a party. You could buy all the food, drinks, and decorations, prepare everything yourself, and then clean up afterwards. That&rsquo;s like running your own servers. You have total control, but it&rsquo;s a lot of work and expense.
+Now, imagine instead you decide to hold your party at a restaurant. They handle the food, drinks, and clean-up. You just pay for what you consume. That&rsquo;s like serverless computing. You don&rsquo;t worry about the infrastructure; you just focus on having a great party (or in this case, building a great app). However, there seems to have been a misunderstanding about the term serverless&hellip;</em></p>
+<p>This challenge need to launch on a private instance.</p>
+<ol start="2">
+<li><strong>Analysis</strong></li>
+</ol>
+<p>When I start the challenge and click on the instance, I arrive in the page below :</p>
+<p><img src="https://gist.github.com/assets/104362418/751231a1-e1ad-45bd-bcd5-a57dd21d9e55" alt="image"></p>
+<p>As we can see, it&rsquo;s a login page. I tried differents things like an apostrophe to know if it&rsquo;s an SQL injection but without results. After this phase, I have started to analyse the source code of the page and I found a <strong>python script</strong>. A login function is present in the script composed with the following code :</p>
+<pre><code>db = sqlite3.connect(&quot;database.db&quot;)
+username = document.querySelector(&quot;#username&quot;).value
+password = document.querySelector(&quot;#password&quot;).value
+passord_hash = hashlib.sha256(password.encode(&quot;utf-8&quot;)).hexdigest()
+data = db.execute(&quot;SELECT * FROM login WHERE username=? and password=?&quot;, (username, passord_hash)).fetchone()
+if data is not None:
+    master_key = int.from_bytes(bytes(password, &quot;utf-8&quot;))
+    cipher = aes.aes(master_key, 128, mode=&quot;CTR&quot;, padding=&quot;PKCS#7&quot;, iv=IV)
+    decrypted_flag = &quot;&quot;.join([chr(x) for x in cipher.dec(FLAG)])
+    toggle(&quot;flag&quot;)
+    document.querySelector(&quot;#flag-text&quot;).innerHTML = f&quot;Congratluations! You solved the challenge. Here's your flag: &lt;b&gt;{decrypted_flag}&lt;/b&gt;&quot;
+else:
+    toggle(&quot;failed&quot;)`
+</code></pre>
+<p>This function load a database which can be downloaded. With a SQL database viewer, I can see the contained entry which is &ldquo;admin&rdquo; for user and &ldquo;11a4a60b518bf24989d481468076e5d5982884626aed9faeb35b8576fcd223e1&rdquo; for the password hash.</p>
+<ol start="3">
+<li><strong>Solution</strong></li>
+</ol>
+<p>With a Google Dork(Google Keyword Research), it&rsquo;s possible to know the value of corresponding hash. <strong>intext:11a4a60b518bf24989d481468076e5d5982884626aed9faeb35b8576fcd223e1</strong> can find the hash in text of all websites referenced in Google(more precisions here <a href="https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06%29"  class="external-link" target="_blank" rel="noopener">https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)</a>. It&rsquo;s matched with the string &ldquo;python&rdquo;. Finally, we have the username,password and the flag that appears when you fill the login form.</p>
+<p><img src="https://gist.github.com/assets/104362418/e2b45399-9933-43a0-b56f-5fd7aea038c2" alt="image-1"></p>
+<p>FLAG : <strong>shc2024{wh0_N33d5_4_53RV3r_4nYw4Y2?}</strong></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     xKayniT 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

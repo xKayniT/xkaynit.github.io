@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  FCSC2024 - Fifty shades of white(Junior) · xKayniT
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="xKayniT">
+<meta name="description" content="FCSC 2024 write up for Fifty shades of white(Junior) challenge">
+<meta name="keywords" content="blog,developer,cybersecurity">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FCSC2024 - Fifty shades of white(Junior)">
+  <meta name="twitter:description" content="FCSC 2024 write up for Fifty shades of white(Junior) challenge">
+
+<meta property="og:url" content="http://localhost:1313/posts/fcsc_2024_fifty_shades_of_whitej/">
+  <meta property="og:site_name" content="xKayniT">
+  <meta property="og:title" content="FCSC2024 - Fifty shades of white(Junior)">
+  <meta property="og:description" content="FCSC 2024 write up for Fifty shades of white(Junior) challenge">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-05-04T00:00:00+00:00">
+    <meta property="article:tag" content="Xkaynit">
+    <meta property="article:tag" content="Reverse">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/fcsc_2024_fifty_shades_of_whitej/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/linuxprofil.jpg" sizes="any">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      xKayniT
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/fcsc_2024_fifty_shades_of_whitej/">
+              FCSC2024 - Fifty shades of white(Junior)
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-05-04T00:00:00Z">
+                May 4, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/xkaynit/">Xkaynit</a></div>
+
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/xkaynit/">Xkaynit</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/reverse/">Reverse</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="fcsc-2024">
+  FCSC 2024
+  <a class="heading-link" href="#fcsc-2024">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="fifty-shades-of-whitejunior">
+  Fifty Shades Of White(Junior)
+  <a class="heading-link" href="#fifty-shades-of-whitejunior">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li><strong>Introduction</strong></li>
+</ol>
+<p>This writeup is about the Fifty Shades Of White(Junior) challenge of the France CyberSecurity Challenge 2024. Here is the description of the challenge :</p>
+<p><em>Le grand Walter White a écrit un programme lui permettant de restreindre l’accès à ses données “professionnelles”. Il distribue des licenses au compte-gouttes, mais vous avez néanmoins récupéré une license qu’il a générée pour son fils ! Son système propose deux niveaux de licenses : celle que vous avez récupérée est la moins privilégiée, et vous souhaitez obtenir une license “admin”.</em></p>
+<p><em>Le programme ci-joint vérifie entre autres le niveau de privilèges de la license, et vous récompense si vous présentez une license “admin”.</em></p>
+<p>File : fifty-shades-of-white, license-walter-white-junior.txt</p>
+<ol start="2">
+<li><strong>Analysis</strong></li>
+</ol>
+<p>Firstly I&rsquo;m going to analyse what is in the text file. Here is the content :</p>
+<p>TmFtZTogV2FsdGVyIFdoaXRlIEp1bmlvcgpTZXJpYWw6IDFkMTE3YzVhLTI5N2QtNGNlNi05MTg2LWQ0Yjg0ZmI3ZjIzMApUeXBlOiAxCg==</p>
+<p>It&rsquo;s seems to be a base64 content according to the two equal signs at the end of the string. It&rsquo;s possible to decode the chain like below :</p>
+<p>Name: Walter White Junior
+Serial: 1d117c5a-297d-4ce6-9186-d4b84fb7f230
+Type: 1</p>
+<p>Now, I know the content of the license file and the analysis of the fifty-shades-of-white file can start. I open the file with ghidra and see the different functions defined in this file :</p>
+<p><img src="https://gist.github.com/assets/104362418/b11d9b13-73bc-4252-8d14-5b62c7247acd" alt="image"></p>
+<p>If I click on the <strong>check</strong> function, I can display this function and analyse what she does :</p>
+<p><img src="https://gist.github.com/assets/104362418/0fc266eb-aba4-443f-b1f8-1cdb62b82d47" alt="image-1"></p>
+<p>In this function, we can see 3 if loops which is the result of the validate function which take the license parameter in entry. Below is an explanation of each loop and the condition to pass in it:</p>
+<ul>
+<li>The first loop check if a license is provided when the program is started.</li>
+<li>The second loop verify that the type of the license is equal to 1.</li>
+<li>The last loop call the function <strong>show_flag</strong> if the type is equal to 0x539.</li>
+</ul>
+<ol start="3">
+<li><strong>Solution</strong></li>
+</ol>
+<p>As we can see, 0x stand for hexadecimal number. So, with a converter, I know that 0x539 give 1337 in decimal. Now, I will try to modify the type field in the license file with 1337 and see what appends.</p>
+<p><img src="https://gist.github.com/assets/104362418/138edde7-7ac6-48ab-a500-ab721780773c" alt="image-2"></p>
+<p>With 1337 in license type, I passed into the third loop so the flag is display.</p>
+<p>FLAG : <strong>FCSC{2053bb69dff8cf975c1a3e3b803b05e5cc68933923aabdd6179eace1ece0c41a}</strong></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     xKayniT 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

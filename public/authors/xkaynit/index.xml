@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xkaynit on xKayniT</title>
+    <link>http://localhost:1313/authors/xkaynit/</link>
+    <description>Recent content in Xkaynit on xKayniT</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/authors/xkaynit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reverse your first program using ghidra</title>
+      <link>http://localhost:1313/posts/reverse_your_first_program/</link>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/reverse_your_first_program/</guid>
+      <description>Reverse your first program using ghidra Link to heading Introduction Link to heading This article is here to help anyone want to start in reverse some programs but don&amp;rsquo;t know where to start. Reverse engineering consist in deconstruct/decompilate(in our case) code or executable file in order to understand how it works and to identify potentials vulnerabilities which can be exploit by an attacker after analysis. As an example, I took a file from https://crackmes.</description>
+    </item>
+    <item>
+      <title>Useful tools for cybersecurity</title>
+      <link>http://localhost:1313/posts/useful_tool/</link>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/useful_tool/</guid>
+      <description>Useful tools to increase your cybersecurity skills Link to heading Introduction Link to heading There is no secret in cybersecurity, if you want to learn you have to practice again and again. Here is a list of some tools which can helps you to start learning or increase your knowledges in cybersecurity. It&amp;rsquo;s a good way for me to remember every tool too. If you have any questions or remarks please feel free to ask :).</description>
+    </item>
+    <item>
+      <title>404CTF - Echauffement</title>
+      <link>http://localhost:1313/posts/404ctf_2024_echauffement/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/404ctf_2024_echauffement/</guid>
+      <description>404CTF 2024 Link to heading Echauffement Link to heading Introduction This writeup is about the echauffement challenge of the 404CTF 2024. Here is the description of the challenge :&#xA;Un bon échauffement permet non seulement d&amp;rsquo;éviter des blessures, mais aussi de conditionner son corps et son esprit au combat qui va suivre. Ce crackme devrait constituer un exercice adéquat..&#xA;File : echauffement.bin&#xA;Analysis The first step in the analysis consist in decompilate the binary file to understand how it works.</description>
+    </item>
+    <item>
+      <title>SHC2024 - Serverless login</title>
+      <link>http://localhost:1313/posts/shc_2024_serverless-login/</link>
+      <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/shc_2024_serverless-login/</guid>
+      <description>SHC 2024 Link to heading serverless-login Link to heading Introduction This writeup is about the serverless-login challenge of the Swiss Hacking Challenge 2024. Here is the description of the challenge :&#xA;Imagine you&amp;rsquo;re throwing a party. You could buy all the food, drinks, and decorations, prepare everything yourself, and then clean up afterwards. That&amp;rsquo;s like running your own servers. You have total control, but it&amp;rsquo;s a lot of work and expense.</description>
+    </item>
+    <item>
+      <title>FCSC2024 - Fifty shades of white(Junior)</title>
+      <link>http://localhost:1313/posts/fcsc_2024_fifty_shades_of_whitej/</link>
+      <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/fcsc_2024_fifty_shades_of_whitej/</guid>
+      <description>FCSC 2024 Link to heading Fifty Shades Of White(Junior) Link to heading Introduction This writeup is about the Fifty Shades Of White(Junior) challenge of the France CyberSecurity Challenge 2024. Here is the description of the challenge :&#xA;Le grand Walter White a écrit un programme lui permettant de restreindre l’accès à ses données “professionnelles”. Il distribue des licenses au compte-gouttes, mais vous avez néanmoins récupéré une license qu’il a générée pour son fils !</description>
+    </item>
+    <item>
+      <title>FCSC2024 - Welcome Admin(1)</title>
+      <link>http://localhost:1313/posts/fcsc_2024_welcomeadmin1/</link>
+      <pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/fcsc_2024_welcomeadmin1/</guid>
+      <description>FCSC 2024 Link to heading Welcome Admin 1/2 Link to heading Introduction This writeup is about the Welcome Admin 1/2 challenge of the France CyberSecurity Challenge 2024. Here is the description of the challenge :&#xA;Au coeur d&amp;rsquo;un réseau labyrinthique, là où la lumière des écrans peine à éclairer les recoins les plus sombres, une demande spéciale est lancée dans les abîmes, un appel discret, attendu seulement par ceux qui connaissent les profondeurs.</description>
+    </item>
+  </channel>
+</rss>
