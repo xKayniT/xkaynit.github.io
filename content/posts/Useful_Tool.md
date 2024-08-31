@@ -27,5 +27,6 @@ The following list is non exhaustive, I complete it with my courses and experien
 - https://hackropole.fr/fr/ : This is a french platform thats bring together all the challenges created for France CyberSecurity Challenge(FCSC). We have more than 400 challenges of all types and difficulties.
 - https://book.hacktricks.xyz/ : Hacktricks has many articles to explain a lot of attacks methodology and more globally how a pentest works, his differents steps. It give the possibility to understand in depth what's going on and why. 
 - https://portswigger.net/web-security : When we are talking about web security, PortSwigger is always a good place to learn. It offers many labs with associated explanations about the attacks and how can it be performed.
+- https://cryptohack.org/ : If you want to go deeper in cryptography, this website is for you. He gives many courses related to differents topics around cryptography in computer and somes exercices to better understand how it works.
 
 I hope this can helps you a lot, have a nice hack :) ! 

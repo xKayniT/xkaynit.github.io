@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  CTFLearn - simplebof · xKayniT
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="xKayniT">
+<meta name="description" content="CTFLearn write up for simplebof challenge">
+<meta name="keywords" content="blog,developer,cybersecurity">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CTFLearn - simplebof">
+  <meta name="twitter:description" content="CTFLearn write up for simplebof challenge">
+
+<meta property="og:url" content="http://localhost:1313/posts/ctflearn_simplebof/">
+  <meta property="og:site_name" content="xKayniT">
+  <meta property="og:title" content="CTFLearn - simplebof">
+  <meta property="og:description" content="CTFLearn write up for simplebof challenge">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-08-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-07T00:00:00+00:00">
+    <meta property="article:tag" content="Xkaynit">
+    <meta property="article:tag" content="Binary">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/ctflearn_simplebof/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/linuxprofil.jpg" sizes="any">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      xKayniT
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/ctflearn_simplebof/">
+              CTFLearn - simplebof
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-08-07T00:00:00Z">
+                August 7, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/xkaynit/">Xkaynit</a></div>
+
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/xkaynit/">Xkaynit</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/binary/">Binary</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="ctflearn">
+  CTFLearn
+  <a class="heading-link" href="#ctflearn">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="simple-bof">
+  Simple bof
+  <a class="heading-link" href="#simple-bof">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li><strong>Introduction</strong></li>
+</ol>
+<p>This writeup is about the simple bof challenge of the CTFlearn website, it&rsquo;s a very interesting challenge to see how a buffer overflow works and to understand it in detail. Here is the description of the challenge :</p>
+<p><em>Want to learn the hacker&rsquo;s secret? Try to smash this buffer!</em></p>
+<p><em>You need guidance? Look no further than to Mr. Liveoverflow. He puts out nice videos you should look if you haven&rsquo;t already</em></p>
+<p><em><strong>nc thekidofarcrania.com 35235</strong></em>
+<strong>link : <a href="https://ctflearn.com/challenge/1010"  class="external-link" target="_blank" rel="noopener">https://ctflearn.com/challenge/1010</a></strong></p>
+<p>File : bof.c</p>
+<ol start="2">
+<li><strong>Analysis</strong></li>
+</ol>
+<p>A buffer overflow is <em>an anomaly whereby a program writes data to buffer beyond the buffer&rsquo;s allocated memory, overwriting adjacent memory locations</em>. Every program in a computer have dedicated memory area and if a program want to write at an address not reserved for it, the system can&rsquo;t properly work(Look at the crowdsite incident). I really wanted to make a write-up about this challenge because the way to resolve is, in my opinion, the better to understand buffer overflow.</p>
+<p>Let&rsquo;s start with the code analysis and more precisely variables declarations :</p>
+<pre tabindex="0"><code>  char padding[16];
+  char buff[32];
+  int notsecret = 0xffffff00;
+  int secret = 0xdeadbeef;
+
+  memset(buff, 0, sizeof(buff));
+  memset(padding, 0xFF, sizeof(padding));
+</code></pre><p>Four variables are created, two arrays and two ints. The two arrays have her values setted by the memset function. Let&rsquo;s have a look at what memset function take in parameters : <strong>void memset(void str, int c, size_t n)</strong>. The first parameter is the entry string, here the two arrays. Second parameter is corresponding to the value using to fill the memory block and last parameter stand for the size of what is wanted to change in the variable(in our case padding and buff). <strong>notsecret</strong> value is set with 0xffffff00 and <strong>secret</strong> with 0xdeadbeef. Now, we can focus on the rest of the code :</p>
+<pre tabindex="0"><code>if (secret == 0x67616c66) {
+    puts(&#34;You did it! Congratuations!&#34;);
+    print_flag(); // Print out the flag. You deserve it.
+    return;
+  } else if (notsecret != 0xffffff00) {
+    puts(&#34;Uhmm... maybe you overflowed too much. Try deleting a few characters.&#34;);
+  } else if (secret != 0xdeadbeef) {
+    puts(&#34;Wow you overflowed the secret value! Now try controlling the value of it!&#34;);
+  } else {
+    puts(&#34;Maybe you haven&#39;t overflowed enough characters? Try again?&#34;);
+  }
+</code></pre><p>As you can see in the code, there is four statements :</p>
+<ul>
+<li>First if check that the secret variable is equal to <strong>0x67616c66</strong>(which is equal to glaf in char)</li>
+<li>Second if check that the notsecret variable is not equal to <strong>0xffffff00</strong>(default value)</li>
+<li>Third if check that the secret value is not equal to <strong>0xdeadbeef</strong>(default value)</li>
+<li>The last else is returned when all the previous conditions are not respected</li>
+</ul>
+<p>So, to print the flag value, we have to set the secret varaible at <strong>0x67616c66</strong>. Now we know how the program works overall and what we have to do, it&rsquo;s time to launch and see what happens.</p>
+<p>The first array appear when the program is started is the following :</p>
+<p><img src="https://gist.github.com/user-attachments/assets/c98b9901-437e-4160-8213-ca2a1ec200ff" alt="image"></p>
+<p>We find the differents variables that were defined earlier, such as <strong>buff</strong>, <strong>padding</strong>, <strong>notsecret</strong> and <strong>secret</strong>. We already know the length of each variables according to the given code so we can try to input 48 characters(the size of <strong>buff</strong> is 32 and <strong>padding</strong> is 16) and see the behavior.</p>
+<p><img src="https://gist.github.com/user-attachments/assets/30050a97-b1ff-48e9-a1b0-6803b0ac9763" alt="image-1"></p>
+<p>With the character &ldquo;a&rdquo; 48 times(61 is the hexa value), the value in the <strong>buff</strong> and <strong>padding</strong> are modified by this input. The next four characters is the secret value(<strong>0xdeadbeef</strong>) and the next four again is notsecret(<strong>0x00ffffff</strong>). One important thing to notice is on the last screenshot, the bytes are store in <strong>little endian</strong> because the least significant bit is stored on the left for <strong>notsecret</strong> value(more information <a href="https://www.geeksforgeeks.org/little-and-big-endian-mystery/"  class="external-link" target="_blank" rel="noopener">here</a>).</p>
+<p>Now that we have the correct lenght, we have to modify the secret value to trigger the first if condition and print the flag. We know that when &ldquo;a&rdquo; character is sent the ASCII char is display(61) on the array and the <strong>secret</strong> value needs to be <strong>0x67616c66</strong>, let&rsquo;s tanslate it in ASCII char : glaf.</p>
+<p><img src="https://gist.github.com/user-attachments/assets/545802fb-1197-433a-b308-de173d2e8e1a" alt="image-2"></p>
+<p>The input on the screenshot above trigger the if condition because <strong>&ldquo;flag&rdquo;</strong>(reversed because of little endian) is present after 48 times the character &ldquo;a&rdquo;. As said earlier, the size of the <strong>buffer+padding</strong> is 48 and the if condition wait for the correct string after the buffer and padding. Futhermore, you can see the notsecret value(<strong>0x00ffffff</strong>) after the secret value which means that if the input text was too big, not secret value will be erased.</p>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Like I said earlier, this challenge was really interesting for me to show how a buffer overflow works in practice because many challenges need knowledges in buffer overflow. Thank for your reading and feel free if you have some questions ! :)</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     xKayniT 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

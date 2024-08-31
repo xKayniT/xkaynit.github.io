@@ -6,8 +6,15 @@
     <description>Recent content in Xkaynit on xKayniT</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/xkaynit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CTFLearn - simplebof</title>
+      <link>http://localhost:1313/posts/ctflearn_simplebof/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ctflearn_simplebof/</guid>
+      <description>CTFLearn Link to heading Simple bof Link to heading Introduction This writeup is about the simple bof challenge of the CTFlearn website, it&amp;rsquo;s a very interesting challenge to see how a buffer overflow works and to understand it in detail. Here is the description of the challenge :&#xA;Want to learn the hacker&amp;rsquo;s secret? Try to smash this buffer!&#xA;You need guidance? Look no further than to Mr. Liveoverflow. He puts out nice videos you should look if you haven&amp;rsquo;t already</description>
+    </item>
     <item>
       <title>Reverse your first program using ghidra</title>
       <link>http://localhost:1313/posts/reverse_your_first_program/</link>

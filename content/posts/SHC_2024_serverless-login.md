@@ -49,7 +49,7 @@ This function load a database which can be downloaded. With a SQL database viewe
 
 3. **Solution**
 
-With a Google Dork(Google Keyword Research), it's possible to know the value of corresponding hash. **intext:11a4a60b518bf24989d481468076e5d5982884626aed9faeb35b8576fcd223e1** can find the hash in text of all websites referenced in Google(more precisions here https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06). It's matched with the string "python". Finally, we have the username,password and the flag that appears when you fill the login form. 
+With a Google Dork(Google Keyword Research), it's possible to know the value of corresponding hash. **intext:11a4a60b518bf24989d481468076e5d5982884626aed9faeb35b8576fcd223e1** can find the hash in text of all websites referenced in Google(more precisions [here](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)). It's matched with the string "python". Finally, we have the username,password and the flag that appears when you fill the login form. 
 
 ![image-1](https://gist.github.com/assets/104362418/e2b45399-9933-43a0-b56f-5fd7aea038c2)
 

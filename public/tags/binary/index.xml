@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Binary on xKayniT</title>
+    <link>http://localhost:1313/tags/binary/</link>
+    <description>Recent content in Binary on xKayniT</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 07 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/binary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CTFLearn - simplebof</title>
+      <link>http://localhost:1313/posts/ctflearn_simplebof/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ctflearn_simplebof/</guid>
+      <description>CTFLearn Link to heading Simple bof Link to heading Introduction This writeup is about the simple bof challenge of the CTFlearn website, it&amp;rsquo;s a very interesting challenge to see how a buffer overflow works and to understand it in detail. Here is the description of the challenge :&#xA;Want to learn the hacker&amp;rsquo;s secret? Try to smash this buffer!&#xA;You need guidance? Look no further than to Mr. Liveoverflow. He puts out nice videos you should look if you haven&amp;rsquo;t already</description>
+    </item>
+  </channel>
+</rss>

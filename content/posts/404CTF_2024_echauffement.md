@@ -24,7 +24,7 @@ File : echauffement.bin
 
 2. **Analysis**
 
-The first step in the analysis consist in decompilate the binary file to understand how it works. We can do this with the decompiler of your choice, which for me it's Ghidra(https://ghidra-sre.org/). The main function is composed with the following code :
+The first step in the analysis consist in decompilate the binary file to understand how it works. We can do this with the decompiler of your choice, which for me it's Ghidra ([ghidra website](https://ghidra-sre.org/)). The main function is composed with the following code :
 
     puts("Vous ne devinerez jamais le mot …");
     void buf;
