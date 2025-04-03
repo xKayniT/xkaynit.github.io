@@ -6,13 +6,41 @@
     <description>Recent content in Tags on xKayniT</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Post</title>
       <link>http://localhost:1313/tags/post/</link>
-      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/post/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web</title>
+      <link>http://localhost:1313/tags/web/</link>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xkaynit</title>
+      <link>http://localhost:1313/tags/xkaynit/</link>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/xkaynit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Malware</title>
+      <link>http://localhost:1313/tags/malware/</link>
+      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/malware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Binary</title>
+      <link>http://localhost:1313/tags/binary/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/binary/</guid>
       <description></description>
     </item>
     <item>
@@ -20,20 +48,6 @@
       <link>http://localhost:1313/tags/reverse/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/reverse/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Xkaynit</title>
-      <link>http://localhost:1313/tags/xkaynit/</link>
-      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/xkaynit/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web</title>
-      <link>http://localhost:1313/tags/web/</link>
-      <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/web/</guid>
       <description></description>
     </item>
   </channel>

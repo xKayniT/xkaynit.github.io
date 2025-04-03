@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  OWASP TOP 10 - Security Misconfiguration · xKayniT
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="xKayniT">
+<meta name="description" content="Fifth OWASP top 10 vulnerabilities - Security Misconfiguration">
+<meta name="keywords" content="blog,developer,cybersecurity">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OWASP TOP 10 - Security Misconfiguration">
+  <meta name="twitter:description" content="Fifth OWASP top 10 vulnerabilities - Security Misconfiguration">
+
+<meta property="og:url" content="http://localhost:1313/posts/owasp_security_misconfiguration/">
+  <meta property="og:site_name" content="xKayniT">
+  <meta property="og:title" content="OWASP TOP 10 - Security Misconfiguration">
+  <meta property="og:description" content="Fifth OWASP top 10 vulnerabilities - Security Misconfiguration">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-30T00:00:00+00:00">
+    <meta property="article:tag" content="Xkaynit">
+    <meta property="article:tag" content="Post">
+    <meta property="article:tag" content="Web">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/owasp_security_misconfiguration/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/linuxprofil.jpg" sizes="any">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      xKayniT
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/owasp_security_misconfiguration/">
+              OWASP TOP 10 - Security Misconfiguration
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-03-30T00:00:00Z">
+                March 30, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/xkaynit/">Xkaynit</a></div>
+
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/xkaynit/">Xkaynit</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/post/">Post</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/web/">Web</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="fifth-owasp-top-10-vulnerabilities---security-misconfiguration">
+  Fifth OWASP top 10 vulnerabilities - Security Misconfiguration
+  <a class="heading-link" href="#fifth-owasp-top-10-vulnerabilities---security-misconfiguration">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This article is the fifth of a series of ten, for more information about the serie please refer to the first article. The first part will introduce what the vulnerability does and the impact of it on website, the second will show the vulnerability with some practical example. Finally, the last part will described the best practices to mitigate and delete vulnerable components. This article is focus on <a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/"  class="external-link" target="_blank" rel="noopener">security misconfiguration</a>.</p>
+<h2 id="security-misconfiguration">
+  Security Misconfiguration
+  <a class="heading-link" href="#security-misconfiguration">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>A Security Misconfiguration happens when the parameters of an application or a system are bad configurated or when some basics configuration are missing. An application/A system can be vulnerable if :</p>
+<ul>
+<li>
+<p>Unecessary features/components are enabled or installed(unecessary ports, services, accounts&hellip;).</p>
+</li>
+<li>
+<p>Default accounts and passwords are enabled and unchanged.</p>
+</li>
+<li>
+<p>Error handling give too many informations to users.</p>
+</li>
+<li>
+<p>The server does not send security headers or directives.</p>
+</li>
+</ul>
+<h2 id="practical-example">
+  Practical example
+  <a class="heading-link" href="#practical-example">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The <a href="https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-in-error-messages"  class="external-link" target="_blank" rel="noopener">lab</a> for this topic will focus on information disclore. More precisely on the third points of the last part, <strong>error handling</strong>. The goal of this lab is to disclose the version of a vulnerable framework. Let&rsquo;s try to solve it :</p>
+<p><img src="https://gist.github.com/user-attachments/assets/c18a1d37-3de0-4ac7-845f-edfa08c91d3a" alt="shop view"></p>
+<p>I arrived on a page like above, the only thing I can do is to click on <strong>View details</strong> for a product.</p>
+<p><img src="https://gist.github.com/user-attachments/assets/f5bb417d-b4b8-4b24-ad28-8182a56f39a0" alt="shop URI"></p>
+<p>In the URI, products are referenced by Id as it is possible to see with the parameter <strong>ProductId</strong>.</p>
+<p><img src="https://gist.github.com/user-attachments/assets/27b22247-4b91-4523-9c33-ecaf0e223730" alt="URI modified"></p>
+<p>The first thing I can do is modifying the <strong>ProductId</strong> with a big number in order to be sure that there is no article. The <strong>Not Found</strong> result is expected because none entry exist in the database for this article. But what happend if I replace the number by a word, a letter ? Let&rsquo;s see :</p>
+<p><img src="https://gist.github.com/user-attachments/assets/9efe3a54-4beb-401f-86be-759d1cace20a" alt="lab solved"></p>
+<p>Bingo ! Indeed, no error handling seems to be in place for another type than integer so I can see the raw error as return from the framework. The framework version is displayed at the bottom of the screenshot.</p>
+<h2 id="means-of-prevention">
+  Means of prevention
+  <a class="heading-link" href="#means-of-prevention">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Many means of prevention exists started from secure installation processes which includes :</p>
+<ul>
+<li>
+<p>Setup a minimal platform without any unnecessary features, components, documentation, and samples. Remove or do not install unused features and frameworks.</p>
+</li>
+<li>
+<p>Think about a segmented application architecture which provide effective and secure separation between components.</p>
+</li>
+<li>
+<p>A task to review and updates the configurations according to security notes or patches should be a part of the patch management process.</p>
+</li>
+<li>
+<p>An automated process to verify the effectiveness of the configurations and settings in all environments.</p>
+</li>
+</ul>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Security misconfiguration is a very common vulnerability due to the surface of it can be applied. A misconfiguration can be the default credentials not changed, an error statement return too many information(practical example) or some unused components. All these elements must be analyzed by security teams to reduce potentials risks.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2024 -
+    
+    2025
+     xKayniT 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

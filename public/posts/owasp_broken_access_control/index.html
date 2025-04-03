@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  OWASP TOP 10 - Broken Access Control · xKayniT
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="xKayniT">
+<meta name="description" content="First OWASP top 10 vulnerabilities - Broken Access Control">
+<meta name="keywords" content="blog,developer,cybersecurity">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OWASP TOP 10 - Broken Access Control">
+  <meta name="twitter:description" content="First OWASP top 10 vulnerabilities - Broken Access Control">
+
+<meta property="og:url" content="http://localhost:1313/posts/owasp_broken_access_control/">
+  <meta property="og:site_name" content="xKayniT">
+  <meta property="og:title" content="OWASP TOP 10 - Broken Access Control">
+  <meta property="og:description" content="First OWASP top 10 vulnerabilities - Broken Access Control">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-19T00:00:00+00:00">
+    <meta property="article:tag" content="Xkaynit">
+    <meta property="article:tag" content="Post">
+    <meta property="article:tag" content="Web">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/owasp_broken_access_control/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/linuxprofil.jpg" sizes="any">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      xKayniT
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/owasp_broken_access_control/">
+              OWASP TOP 10 - Broken Access Control
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-03-19T00:00:00Z">
+                March 19, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/xkaynit/">Xkaynit</a></div>
+
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/xkaynit/">Xkaynit</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/post/">Post</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/web/">Web</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="first-owasp-top-10-vulnerabilities---broken-access-control">
+  First OWASP top 10 vulnerabilities - Broken Access Control
+  <a class="heading-link" href="#first-owasp-top-10-vulnerabilities---broken-access-control">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This article is the first of a series of ten. The aim of this serie is to describe each vulnerabilities contained in the <a href="https://owasp.org/www-project-top-ten/"  class="external-link" target="_blank" rel="noopener">OWASP top 10 2021</a>. Open Web Application Security Project(OWASP) is an international organisation with the goal of improving web security applicatios. Each article will be composed with three parts. The first part will introduce what the vulnerability does and the impact of it on website, the second will show the vulnerability in practice with a portswigger lab related to access control. Finally, the last part will described the best practices to mitigate and delete vulnerable components. The first article is focus on <a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/"  class="external-link" target="_blank" rel="noopener">Broken Access Control</a>.</p>
+<h2 id="broken-access-control">
+  Broken Access Control
+  <a class="heading-link" href="#broken-access-control">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Access control define the permissions of a user into a website. When these permissions are not well-defined or broken, user can do things normally unauthorized for him such as switch to another account. This can lead to unauthorized information disclosure, modification of some information and it is a threat for integrity of user data. Common acces control vulnerabilities include notably :</p>
+<ul>
+<li>
+<p>Violation of the principle of least privilege or deny by default. Some resources with particular roles or users are accessible to anyone.</p>
+</li>
+<li>
+<p>Bypassing access control checks by modifying URL, internal application state, or the HTML page, or by using an attack tool modifying API requests.</p>
+</li>
+<li>
+<p>Acting as a user without being logged in or acting as an admin when logged in as a user.</p>
+</li>
+<li>
+<p>Force browsing to authenticated pages as an unauthenticated user or to privileged pages as a standard user.</p>
+</li>
+</ul>
+<h2 id="practical-example">
+  Practical example
+  <a class="heading-link" href="#practical-example">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>As I said earlier, I&rsquo;m going to use a <a href="https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality"  class="external-link" target="_blank" rel="noopener">portswigger lab</a> which is designed to practice vulnerabilities related on access control. I will try to use one of the method cited above. The first thing to do is to login on the platform. In the lesson provide with this lab we learn that a robots.txt file can disclose some interestings URI. Let&rsquo;s try to access to this file :</p>
+<p><img src="https://gist.github.com/user-attachments/assets/0f05f375-ca74-4e0c-b30d-0fbecb485bb4" alt="robots file"></p>
+<p>On the robots file, a URI location is specified. As it is possible to see, the URI is related to an administrator panel. If I try to go on this URI we have the possibility to delete some user account :</p>
+<p><img src="https://gist.github.com/user-attachments/assets/91f9b398-75f9-42df-9974-79b701b2801c" alt="admin panel"></p>
+<p>With deleting user carlos, the lab is solved ! The goal of a robots file is to display some directories directly to <a href="https://developers.google.com/search/docs/crawling-indexing/robots/intro"  class="external-link" target="_blank" rel="noopener">web google crawlers</a>. Here the file is not a problem although display the administrator panel on the robots file is not a good practice, an attacker could brute-force directories names. The major problem here is that the panel is accessible for anyone without any control.</p>
+<h2 id="means-of-prevention">
+  Means of prevention
+  <a class="heading-link" href="#means-of-prevention">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Differents means of prevention exists, there are directly linked with common access control vulnerabilities described in the previous part. You can find below a non-exhaustive list of it :</p>
+<ul>
+<li>
+<p>Deny by default access to a resource except if it is a public resource.</p>
+</li>
+<li>
+<p>Disable web directory listing and ensure important files(e.g .git, backup files&hellip;) are not in the web roots.</p>
+</li>
+<li>
+<p>Log access control failures with sending alerts to administrator in such cases(e.g repeated failures, trying to access an unauthorized resources many times).</p>
+</li>
+<li>
+<p>If your application have an API, set a rate limit in order to prevent the use of automated tools(same thing with the access control).</p>
+</li>
+</ul>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This article show the first vulnerability of the OWASP top 10 2021. Access control is a big part of a web application because it is directly linked to users rights. Developpers and security team should be aware of this risk and apply the means of prevention when it is possible.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2024 -
+    
+    2025
+     xKayniT 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

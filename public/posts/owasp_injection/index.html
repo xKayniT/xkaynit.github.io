@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  OWASP TOP 10 - Injection · xKayniT
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="xKayniT">
+<meta name="description" content="Third OWASP top 10 vulnerabilities - Injection">
+<meta name="keywords" content="blog,developer,cybersecurity">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OWASP TOP 10 - Injection">
+  <meta name="twitter:description" content="Third OWASP top 10 vulnerabilities - Injection">
+
+<meta property="og:url" content="http://localhost:1313/posts/owasp_injection/">
+  <meta property="og:site_name" content="xKayniT">
+  <meta property="og:title" content="OWASP TOP 10 - Injection">
+  <meta property="og:description" content="Third OWASP top 10 vulnerabilities - Injection">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-24T00:00:00+00:00">
+    <meta property="article:tag" content="Xkaynit">
+    <meta property="article:tag" content="Post">
+    <meta property="article:tag" content="Web">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/owasp_injection/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/linuxprofil.jpg" sizes="any">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      xKayniT
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/owasp_injection/">
+              OWASP TOP 10 - Injection
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-03-24T00:00:00Z">
+                March 24, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/xkaynit/">Xkaynit</a></div>
+
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/xkaynit/">Xkaynit</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/post/">Post</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/web/">Web</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="third-owasp-top-10-vulnerabilities---injection">
+  Third OWASP top 10 vulnerabilities - Injection
+  <a class="heading-link" href="#third-owasp-top-10-vulnerabilities---injection">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This article is the third of a series of ten, for more information about the serie please refer to the first article. The first part will introduce what the vulnerability does and the impact of it on website, the second will show the vulnerability with some practical example. Finally, the last part will described the best practices to mitigate and delete vulnerable components. This article is focus on <a href="https://owasp.org/Top10/A03_2021-Injection/"  class="external-link" target="_blank" rel="noopener">injection</a>.</p>
+<h2 id="injection">
+  Injection
+  <a class="heading-link" href="#injection">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Wikipedia defines <em><a href="https://en.wikipedia.org/wiki/Code_injection"  class="external-link" target="_blank" rel="noopener">Code Injection</a> as a computer security exploit where a program fails to correctly process external data, such as user input, causing it to interpret the data as executable commands.</em> An injection can be of differents types such as for example SQL or XSS injection. Below are some elements which can make your application vulnerable :</p>
+<ul>
+<li>
+<p>User input are not validated, filtered or sanitized by the application. None control is done on data.</p>
+</li>
+<li>
+<p>Dynamic queries or non-parameterized calls without context-aware escaping are used directly in the interpreter especially for SQL injection.</p>
+</li>
+<li>
+<p>Hostile data is directly used or concatenated. This point is linked to the first one.</p>
+</li>
+</ul>
+<h2 id="practical-example">
+  Practical example
+  <a class="heading-link" href="#practical-example">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I am going to show two types of injection here. The first one will talk about SQL injection which is a direct interaction with the database in a user input and how to detect it. The second is oriented on XSS injection which allow the user to execute command on both client or server side.</p>
+<p><strong>SQL Injection :</strong></p>
+<p>This is a very common types of injection. This happens when the user input is not properly validated and cause a non-expected interaction with the database. Most of the times this vulnerability appears on login form and can cause a lot of damages. It is possible to use a set of tests to all entry point in a application in order to detect a SQL injection :</p>
+<ul>
+<li>
+<p>The single quote character <strong>&rsquo;</strong> can help to identify it if an error is returned.</p>
+</li>
+<li>
+<p>Use some boolean conditions like <strong>OR 1=1</strong> to detect some anomalies.</p>
+</li>
+<li>
+<p>Some tools can help you to identify this such as Burp Scanner or SQLMap.</p>
+</li>
+</ul>
+<p>Now that we know how to detect SQL injection we can try to detect it with an exercise. I take <a href="https://github.com/juice-shop/juice-shop"  class="external-link" target="_blank" rel="noopener">juice shop</a> as a lab which is designed by OWASP to learn web vulnerabilities. The first step is to use the techniques cited above in order to check if there are some vulnerabilities, the scope of this part is the login page. Let&rsquo;s try the single quote :</p>
+<p><img src="https://gist.github.com/user-attachments/assets/df1785ad-e7fe-44a3-be80-921430f6f1a2" alt="sql injection"></p>
+<p>As it is possible to see, the error returned seems to be abnormal. Indeed, this is the behavior of an SQL injection. The next thing to do here is to find the correct payload, I will not show you how to resolve this lab because I want to let you try by yourself(hint : <a href="https://github.com/payloadbox/sql-injection-payload-list?tab=readme-ov-file"  class="external-link" target="_blank" rel="noopener">SQL injection payload</a>).</p>
+<p><strong>XSS injection :</strong></p>
+<p>Cross-site scripting is another common types of injection. The aim of it is to execute command on a user input which can lead to potential malicious behavior. There are three mains types of XSS attacks(<a href="https://portswigger.net/web-security/cross-site-scripting#how-to-find-and-test-for-xss-vulnerabilities"  class="external-link" target="_blank" rel="noopener">for more information</a>) :</p>
+<ul>
+<li>
+<p>Reflected XSS where the malicious script comes from the current HTTP request.</p>
+</li>
+<li>
+<p>Stored XSS where the malicious script comes from the website&rsquo;s database.</p>
+</li>
+<li>
+<p>DOM-based XSS where the vulnerability exists client-side code rather than server-side code.</p>
+</li>
+</ul>
+<p>To detect the presence of a XSS vulnerability, it is possible to execute some functions like <strong>alert()</strong> or <strong>print()</strong> on user input field. The example below show how to detect it with solving a portswigger lab :</p>
+<p><img src="https://gist.github.com/user-attachments/assets/5755d973-58a7-4b94-b960-dfb7a369f6d3" alt="search bar"></p>
+<p><img src="https://gist.github.com/user-attachments/assets/768e0671-62c1-472f-98f2-7690237f2974" alt="xss result"></p>
+<p>In the first screenshot I am trying to identify if a cross-site scripting vulnerability exist in the website. The payload filled should be interpreted as executable code if a vulnerability is present. The result is shown in the second screenshot and confirm the vulnerability. This is a reflected XSS because it comes from the current HTTP request if I take a look on network tab on a browser.</p>
+<p><img src="https://gist.github.com/user-attachments/assets/01f5239b-798c-45cf-bb17-961774fadc9d" alt="reflected xss"></p>
+<h2 id="means-of-prevention">
+  Means of prevention
+  <a class="heading-link" href="#means-of-prevention">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Hopefully, many ways can be set in place to prevent from injections :</p>
+<ul>
+<li>
+<p>Safe API can be a solution because it provides a parameterized interface.</p>
+</li>
+<li>
+<p>Always validated, filtered and sanitized user input.</p>
+</li>
+<li>
+<p>Use LIMIT and other SQL controls within queries to prevent mass disclosure of records in case of SQL injection.</p>
+</li>
+</ul>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Injection is a very widespread vulnerability nowadays although it easy to detect and patch. All developers shall be aware of how it works and the impact that it can have on a company.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2024 -
+    
+    2025
+     xKayniT 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
