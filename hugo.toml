@@ -49,9 +49,9 @@ style = "github-dark"
   weight = 1
   url = "https://github.com/xKayniT"
 [[params.social]]
-  name = "CTFlearn"
+  name = "Root-me"
   weight = 2
-  url = "https://ctflearn.com/user/xkaynit"
+  url = "https://www.root-me.org/xKayniT"
 [[params.social]]
   name = "LinkedIn"
   icon = "fa-brands fa-linkedin fa-2x"

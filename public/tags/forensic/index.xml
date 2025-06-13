@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forensic on xKayniT</title>
+    <link>http://localhost:1313/tags/forensic/</link>
+    <description>Recent content in Forensic on xKayniT</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/forensic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FCSC - Analyse mémoire - Pour commencer</title>
+      <link>http://localhost:1313/posts/fcsc_2025_analyse-memoire_pour-commencer/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/fcsc_2025_analyse-memoire_pour-commencer/</guid>
+      <description>&lt;h1 id=&#34;fcsc-2025&#34;&gt;&#xA;  FCSC 2025&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#fcsc-2025&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;analyse-mémoire---pour-commencer-12&#34;&gt;&#xA;  Analyse mémoire - Pour commencer 1/2&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#analyse-m%c3%a9moire---pour-commencer-12&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;This writeup is about the Analyse mémoire - Pour commencer challenge of the France CyberSecurity Challenge 2025. Here is the description of the challenge :&lt;/p&gt;&#xA;&lt;p&gt;You are preparing to analyze a memory dump and you are noting some information about the machine before diving into the analysis:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

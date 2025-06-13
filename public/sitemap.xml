@@ -3,30 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/authors/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/owasp_security_misconfiguration/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/posts/owasp_soft_and_data_integrity_failures/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/post/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/web/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/authors/xkaynit/</loc>
-    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/xkaynit/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/owasp_identification_and_authentication_failures/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/owasp_vulnerable_and_outdated_components/</loc>
+    <lastmod>2025-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/fcsc_2025_analyse-memoire_pour-commencer/</loc>
+    <lastmod>2025-04-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/forensic/</loc>
+    <lastmod>2025-04-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/owasp_security_misconfiguration/</loc>
     <lastmod>2025-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/owasp_insecure_design/</loc>
