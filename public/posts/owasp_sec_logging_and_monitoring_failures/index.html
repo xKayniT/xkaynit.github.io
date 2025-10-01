@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  OWASP TOP 10 - Security Logging and Monitoring Failures · xKayniT
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="xKayniT">
+<meta name="description" content="Nineth OWASP top 10 vulnerabilities - Security Logging and Monitoring Failures">
+<meta name="keywords" content="blog,developer,cybersecurity">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OWASP TOP 10 - Security Logging and Monitoring Failures">
+  <meta name="twitter:description" content="Nineth OWASP top 10 vulnerabilities - Security Logging and Monitoring Failures">
+
+<meta property="og:url" content="http://localhost:1313/posts/owasp_sec_logging_and_monitoring_failures/">
+  <meta property="og:site_name" content="xKayniT">
+  <meta property="og:title" content="OWASP TOP 10 - Security Logging and Monitoring Failures">
+  <meta property="og:description" content="Nineth OWASP top 10 vulnerabilities - Security Logging and Monitoring Failures">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-07-01T00:00:00+00:00">
+    <meta property="article:tag" content="Xkaynit">
+    <meta property="article:tag" content="Post">
+    <meta property="article:tag" content="Web">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/owasp_sec_logging_and_monitoring_failures/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/linuxprofil.jpg" sizes="any">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      xKayniT
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/owasp_sec_logging_and_monitoring_failures/">
+              OWASP TOP 10 - Security Logging and Monitoring Failures
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-07-01T00:00:00Z">
+                July 1, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/xkaynit/">Xkaynit</a></div>
+
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/xkaynit/">Xkaynit</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/post/">Post</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/web/">Web</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="nineth-owasp-top-10-vulnerabilities---security-logging-and-monitoring-failures">
+  Nineth OWASP top 10 vulnerabilities - Security Logging and Monitoring Failures
+  <a class="heading-link" href="#nineth-owasp-top-10-vulnerabilities---security-logging-and-monitoring-failures">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This article is the nineth of a series of ten, for more information about the serie please refer to the first article. The first part will introduce what the vulnerability does and the impact of it on website, the second will show the vulnerability with some practical examples. Finally, the last part will described the best practices to mitigate and delete vulnerable components. This article is focus on <a href="https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/"  class="external-link" target="_blank" rel="noopener">security logging and monitoring failures</a>.</p>
+<h2 id="security-logging-and-monitoring-failures">
+  Security Logging and Monitoring Failures
+  <a class="heading-link" href="#security-logging-and-monitoring-failures">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This category is coming from the community survey and earned a place from the 2017 Top 10. She focuses on the detection and response time to attacks/breachs. Logging and Monitoring can be very impactful and useful for accountability, visibility and forensics. Security Logging and Monitoring Failures is regularly put behind others categories because it can be expensive in money and time to setup a good and clear loggind/monitoring system. Breach cannot be detected if :</p>
+<ul>
+<li>
+<p>Logins or failed logins are not logged.</p>
+</li>
+<li>
+<p>Warning and errors generate unclear log messages.</p>
+</li>
+<li>
+<p>Logs of applications and APIs are not monitored for suspicious activity.</p>
+</li>
+<li>
+<p>Logs are not stored with redundancy.</p>
+</li>
+<li>
+<p>Security application tools do not trigger alerts.</p>
+</li>
+<li>
+<p>Logs are not recorded in real-time or near real-time.</p>
+</li>
+</ul>
+<h2 id="practical-example">
+  Practical example
+  <a class="heading-link" href="#practical-example">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I found no labs related to this vulnerability, this is why there are only two examples here :</p>
+<ul>
+<li>
+<p>Your company works with a third-party cloud provider for the authentication of your e-commerce website. If a breach occured in it and the cloud provider alerts you few days after the incident, you will not be able to answer properly to it in a reasonable time. This is why it is important to ensure your company works with well-known and trusted provider.</p>
+</li>
+<li>
+<p>For the second one, let us imagine we are on a <strong>red team</strong> exercise. As a remember, a <strong>red(offensive) team</strong> exercise is when a company want to know the detection and response time of the <strong>blue(defensive) team</strong> with doing some (emulated)attacks on the system/network. The goal of the <strong>red team</strong> is to be silent and not to be detected, where the <strong>blue team</strong> objective is to detect him as earlier as she can. However, if your application or system do not have logging or monitoring features, this complicate a lot the work of the defensive team because she has no ways to identify that an intrusion happened.</p>
+</li>
+</ul>
+<h2 id="means-of-prevention">
+  Means of prevention
+  <a class="heading-link" href="#means-of-prevention">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Fortunalety, developers can implement some controls to prevent from this type of attacks with the following things :</p>
+<ul>
+<li>
+<p>Be sure that all tries to login, access-control and server-side input validation failures are logged by the application.</p>
+</li>
+<li>
+<p>Ensure that generated logs are in a format which a SIEM can easily consume and analyse.</p>
+</li>
+<li>
+<p>Ensure data logs are correctly encoded in order to prevent injection or attacks on logging and monitoring systems.</p>
+</li>
+<li>
+<p>Establish a recovery plan and make some exercises of incident response after an attack to try your detection and response time.</p>
+</li>
+</ul>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Nowadays, logging and monitoring is mandatory for each applications or teams who wants to be secured. The detection and response time are both important to have the smallest possible impact on the system and network. Additionnaly, many solutions exists to treat logs streams such as ELK(Elastic Search suite) or Wazuh for example.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2024 -
+    
+    2025
+     xKayniT 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

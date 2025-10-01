@@ -6,7 +6,7 @@ aliases = ["about-us", "contact"]
 author = "xKayniT"
 +++
 
-I'm a computer science and cybersecurity student in his last year of courses(Master). I started to study computer science since 4 years in high school with the fundamentals concepts of how a network and software development works. During this two years of high school, I have worked on a project which had mix development and network in order to involve on this concepts. 
+Since august 2025, I'm a cybersecurity engineer. I started to study computer science since 5 years in high school with the fundamentals concepts of how a network and software development works. During this three years of high school, I have worked on a project which had mix development and network in order to involve on this concepts. 
 
 After my high school years, I had the opportunity to go in a graduate courses to be an engineer with a focus in cybersecurity. For me, it was an obvious choice because cybersecurity is very important nowadays according to the increase of devices in the world and the attacks methods. In the engineering program, I saw software/application development in details, the fundamentals of DevOps like Git CI/CD or Kubernetes Clusters, how a network can be securise and the **most important** for me is how a **penetration test** is performed, its steps and some of the required knowledges/skills.
 
