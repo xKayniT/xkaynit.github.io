@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Menaces sur la supply-chain - NPM · xKayniT
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="xKayniT">
+<meta name="description" content="Article présentant les menaces sur la supply chain pour NPM">
+<meta name="keywords" content="blog,developer,cybersecurity">
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Menaces sur la supply-chain - NPM">
+	<meta name="twitter:description" content="Article présentant les menaces sur la supply chain pour NPM">
+
+<meta property="og:url" content="http://localhost:1313/posts/menaces_supply_chain-npm/">
+	<meta property="og:site_name" content="xKayniT">
+	<meta property="og:title" content="Menaces sur la supply-chain - NPM">
+	<meta property="og:description" content="Article présentant les menaces sur la supply chain pour NPM">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-06-06T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-06-06T00:00:00+00:00">
+		<meta property="article:tag" content="Xkaynit">
+		<meta property="article:tag" content="DevSecOps">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/menaces_supply_chain-npm/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/linuxprofil.jpg" sizes="any">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/linuxprofil.jpg" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      xKayniT
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/menaces_supply_chain-npm/">
+              Menaces sur la supply-chain - NPM
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2026-06-06T00:00:00Z">
+                June 6, 2026
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              6-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/xkaynit/">Xkaynit</a></div>
+
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/xkaynit/">Xkaynit</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/devsecops/">DevSecOps</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="menaces-sur-la-supply-chain---npm">
+  Menaces sur la supply-chain - NPM
+  <a class="heading-link" href="#menaces-sur-la-supply-chain---npm">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li><strong>Introduction</strong></li>
+</ol>
+<p>La supply chain (chaîne logistique en français) décrit l&rsquo;ensemble des processus de production et de livraison d&rsquo;un produit/logiciel, depuis l&rsquo;approvisionnement en matières premières jusqu&rsquo;à la livraison au consommateur. En informatique, cela comprend le développement du logiciel jusqu&rsquo;à la livraison au client. Les attaquants ne cherchent plus à s&rsquo;attaquer uniquement au produit final, ils essaient désormais de s&rsquo;en prendre aux étapes en amont dans le but de compromettre la chaîne d&rsquo;intégration et de développement continue de manière à délivrer un produit vulnérable. Face à la recrudescence de ce type d&rsquo;attaque, il est important de comprendre comment se sécuriser efficacement pour limiter les risques liés à la supply chain.</p>
+<p>Dans cet article nous allons nous pencher sur Node Package Manager (NPM). NPM est un gestionnaire de paquets utilisé pour le langage de programmation JavaScript. Il permet d&rsquo;installer et de gérer des librairies associées à ce langage et est utilisé par plus de 17 millions de développeurs selon NPM lui-même. Il est ainsi possible de créer un projet, de télécharger des paquets ou encore de les mettre à jour. NPM fait donc partie intégrante de la chaîne d&rsquo;approvisionnement en allant télécharger les paquets nécessaires à la bonne exécution du projet.</p>
+<ol start="2">
+<li><strong>Exemples réels d&rsquo;attaques</strong></li>
+</ol>
+<p>Il existe plusieurs attaques récentes liées à la CI/CD, j&rsquo;ai choisi d&rsquo;en présenter deux qui ont eu un impact important de par l&rsquo;utilisation de la librairie par la communauté mais également la manière dont cela s&rsquo;est produit. J&rsquo;aurais également pu citer l&rsquo;attaque sur le dépôt Github de Trivy suite à un token non révoqué sur Github.</p>
+<h3 id="axios">
+  Axios
+  <a class="heading-link" href="#axios">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>La première attaque concerne le paquet Axios et s&rsquo;est déroulée au mois de mars 2026. C&rsquo;est un paquet qui a plus de 100 millions de téléchargements quotidiens et est présent dans une majorité d&rsquo;applications car il permet notamment à une application web d&rsquo;interagir avec des API. L&rsquo;attaquant a eu accès à un compte utilisateur d&rsquo;un des mainteneurs du paquet Axios. Il s&rsquo;est ensuite servi d&rsquo;une fonctionnalité populaire sous NPM et transparente pour l&rsquo;utilisateur : le lifecycle hook. Cette fonctionnalité permet d&rsquo;exécuter un script dis de &ldquo;post-installation&rdquo; pour le paquet qui a ici été détourné pour aller exécuter du code malveillant injecté par l&rsquo;attaquant grâce à son accès au dépôt.</p>
+<p>Il a ensuite publié les modifications dans une fausse dépendance du paquet Axios (<a href="mailto:plain-crypto-js@4.2.1" >plain-crypto-js@4.2.1</a>) dont le but était d&rsquo;exécuter son script de post-installation qui, selon l&rsquo;OS déployait un RAT (Remote Access Trojan) permettant à l&rsquo;attaquant d&rsquo;avoir un contrôle à distance sur l&rsquo;équipement cible. Tout le trafic envoyé se rapprochait d&rsquo;un échange classique NPM pour masquer ces pistes et passer inaperçu auprès des outils de détection.</p>
+<p>L&rsquo;incident a rapidement été détecté et les correctifs associés appliqués (environ 40 minutes). Les paquets malveillants portaient la signature du groupe UNC109 (nord-coréen).</p>
+<p>Source : <a href="https://itsocial.fr/cybersecurite/cybersecurite-actualites/anatomie-dune-attaque-comment-axios-a-servi-de-vecteur-a-un-cheval-de-troie-multiplateforme-dissimule-dans-une-dependance-npm/"  class="external-link" target="_blank" rel="noopener">Attaque Axios</a></p>
+<h3 id="github">
+  Github
+  <a class="heading-link" href="#github">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Cette seconde attaque s&rsquo;est quant à elle déroulée il y a quelques jours à l&rsquo;heure où cet article est écrit. Pour rappel, Github est une plateforme étant utilisée partout dans le monde et permettant de partager ses projets avec un historique de ce qui a été effectué. L&rsquo;attaquant s&rsquo;est cette fois-ci servi d&rsquo;une extension VS Code malveillante qui a permis de compromettre un compte d&rsquo;un des mainteneurs de Github.</p>
+<p>Il a ainsi eu accès à des milliers (environ 3800) de dépôts internes de l&rsquo;entreprise. Cela n&rsquo;a pas impacté les dépôts publics et privés des utilisateurs selon les constatations. En effet, le groupe TeamPCP a revendiqué être à l&rsquo;origine de l&rsquo;attaque et a mis en vente les données pour 50 000 dollars. Lorsque l&rsquo;on installe une extension VS Code il n&rsquo;y a qu&rsquo;à cliquer sur Installer et le logiciel s&rsquo;occupe du reste. La marketplace de ses extensions est gérée par Microsoft qui n&rsquo;a pas détecté de comportement malveillant dans celle installée par le développeur.</p>
+<p>Les mesures et correctifs nécessaires à la situation ont directement été appliqués par Github.</p>
+<p>Source : <a href="https://korben.info/github-hack-vs-code-extension.html"  class="external-link" target="_blank" rel="noopener">Attaque Github</a></p>
+<ol start="3">
+<li><strong>Mesures de sécurité</strong></li>
+</ol>
+<p>Une fois que l&rsquo;on à ces exemples en tête, il faut désormais pouvoir limiter la zone d&rsquo;exposition de la supply-chain. Ce chapitre sera donc découpé en une partie qui se concentrera sur NPM et une autre plus globale regroupant des bonnes pratiques dans l&rsquo;optique de sécuriser et limiter les risques.</p>
+<h3 id="npm">
+  NPM
+  <a class="heading-link" href="#npm">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Voici quelques recommandations applicables dans le cadre de l&rsquo;utilisation de NPM dans un processus de CI/CD :</p>
+<ul>
+<li><strong>Désactivation des scripts lifecycle hooks</strong> : L&rsquo;option &ndash;ignore-scripts durant un npm install va permettre de limiter l&rsquo;exécution des scripts tiers. Cela peut cependant faire dysfonctionner certaines dépendances, il est alors possible d&rsquo;ajouter le module <strong>allow-scripts</strong> pour autoriser uniquement certains paquets de confiance à pouvoir exécuter ces scripts.</li>
+<li><strong>Utilisation de l&rsquo;attribut minimumReleaseAge</strong> : Cet attribut est pertinent car il permet de télécharger une nouvelle version d&rsquo;un paquet après un temps défini. La majorité des paquets malveillants étant découverts rapidement (quelques heures), mettre cet attribut à une valeur de deux ou trois jours permet de se protéger du téléchargement d&rsquo;un paquet compromis.</li>
+<li><strong>Utilisation de pnpm</strong> : Ce gestionnaire de paquets embarque des fonctionnalités de sécurité nativement que n&rsquo;a pas NPM. Par exemple il embarque le paquet <strong>allow-scripts</strong> par défaut, il embarque également un attribut nommé TrustPolicy qui fait en sorte qu&rsquo;une nouvelle version d&rsquo;un paquet ne puisse être téléchargée si le niveau de confiance de celle-ci a baissé par rapport à la précédente (système basé sur la réputation du mainteneur).</li>
+</ul>
+<h3 id="global">
+  Global
+  <a class="heading-link" href="#global">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Ces recommandations permettront de limiter l&rsquo;impact si de nouveaux paquets viennent à être compromis. Les mesures de sécurité ci-dessous s&rsquo;appliquent dans un contexte plus global et pas uniquement à NPM, ce sont des bonnes pratiques liées à la CI/CD :</p>
+<ul>
+<li><strong>Utilisation du hash SHA256</strong> : Lorsque cela est possible, il est nécessaire de marquer les versions des composants utilisées avec le hash de la version correspondante. Cela permet de se prémunir d&rsquo;une modification dans la version du paquet utilisée(exemple : mise en place d&rsquo;une backdoor).</li>
+<li><strong>Secrets, clé API&hellip; en clair dans le code</strong> : Aucun token, clé API ou mot de passe ne doit être stocké en clair dans le code ou les pipelines CI/CD. Un outil comme <a href="https://github.com/gitleaks/gitleaks"  class="external-link" target="_blank" rel="noopener">Gitleaks</a> peut être utilisé pour s&rsquo;assurer qu&rsquo;aucune information sensible n&rsquo;est affichée en clair dans le code. De plus, un commit où des informations sensibles seraient en clair doit être systématiquement refusée.</li>
+<li><strong>Vérification des librairies utilisées</strong> : Avant de télécharger et d&rsquo;utiliser une librairie, il est nécessaire de vérifier qu&rsquo;elle est de confiance. Cela peut se faire par le biais de la vérification de l&rsquo;activité du mainteneur ainsi que sa popularité notamment. Cela n&rsquo;est cependant pas une science exacte et un paquet populaire et actif peut être un paquet malveillant dans certains cas.</li>
+<li><strong>Gestion des tokens</strong> : Une gestion des tokens et plus globalement des accès doit être mise en place au sein du projet. Cela comprend des droits granulaires sur les tokens fournis aux différentes équipes avec uniquement les droits nécessaires pour chacune d&rsquo;elles et également une rotation des tokens sur des périodes courtes (environ 60 jours) doit être mise en place.</li>
+</ul>
+<ol start="4">
+<li><strong>Conclusion</strong></li>
+</ol>
+<p>Désormais, les attaquants ne ciblent plus uniquement le produit final mais bien la chaîne logicielle complète dans le but de compromettre celui-ci dès la phase d&rsquo;intégration et de déploiement. Face à cela, les développeurs et équipe de sécurité doivent être vigilants sur les librairies utilisées dans le code et celles téléchargées. En cas de suspicion de compromission ou comprimission avérée, il est nécessaire de changer/révoquer chaque token, mots de passe et clés API utilisés au sein du projet concerné ainsi que d&rsquo;isoler celui-ci.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2024 -
+    
+    2026
+     xKayniT 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Supply-Chain on xKayniT</title>
+		<link>http://localhost:1313/tags/supply-chain/</link>
+		<description>Recent content in Supply-Chain on xKayniT</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 23 May 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/supply-chain/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Menaces sur la supply-chain - NPM</title>
+				<link>http://localhost:1313/posts/menaces_supply_chain-npm/</link>
+				<pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/menaces_supply_chain-npm/</guid>
+				<description>&lt;h2 id=&#34;menaces-sur-la-supply-chain---npm&#34;&gt;&#xA;  Menaces sur la supply-chain - NPM&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#menaces-sur-la-supply-chain---npm&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;La supply-chain(chaîne logistique en français) décrit l&amp;rsquo;ensemble des processus de production et de livraison d&amp;rsquo;un produit, depuis l&amp;rsquo;approvisionnement en matière premières jusqu&amp;rsquo;à la livraison au consommateur final. En informatique, cela comprend le développement du logiciel jusqu&amp;rsquo;a la livraison de celui-ci au client. Les attaquants ne cherchent plus à s&amp;rsquo;attaquer uniquement au produit final, il essaie désormais de s&amp;rsquo;en prendre aux étapes en amont dans le but de délivrer des logiciels vulnérables. Face à la recruedescence de ce type d&amp;rsquo;attaque, il est important de comprendre comment se sécuriser efficacement pour limiter les risques en cas de compromission.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
